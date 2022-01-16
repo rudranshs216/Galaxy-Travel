@@ -1,0 +1,55 @@
+.admin_compo{
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 10fr;
+    grid-gap: 10px;
+    margin: 10px 50px;
+    border: 2px solid rgba(255,255,255,0.5);
+        padding: 10px;
+    
+}
+.name, .email, .index, .detail{
+    overflow-x: scroll;
+    
+}
+.index{
+    border-right: 2px solid red ;
+}
+.detail{
+    width: 100%;
+}
+@media screen and (max-width: 980px) {
+    .admin_compo{
+        display: grid;
+        grid-template-columns: 1fr 4fr 4fr;
+       
+        grid-gap: 10px;
+        margin: 10px 50px;
+        
+    } 
+    .detail{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .admin_compo{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-gap: 10px;
+        margin: 20px 10px;
+        border: 2px solid rgba(255,255,255,0.5);
+        padding: 10px;
+        
+    } 
+    .detail{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .email{
+        grid-column-start: 1;
+        grid-column-end: 4; 
+    }
+    
+}
+

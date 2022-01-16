@@ -1,0 +1,108 @@
+img{
+    width: 250px;
+}
+.left .btn {
+    width: fit-content;
+
+}
+.trainingInfo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
+    width: 100%;
+    height: 75vh;
+    margin: 50px 20px;
+}
+.left, .right{
+    width: 100%;
+    height: 100%;
+}
+.left , .right {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+}
+.right, .left{
+   
+}
+.img1{
+z-index: 1;
+    
+   
+}
+.img{
+    margin: auto;
+    height: fit-content;
+}
+.img1{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.left h1{
+    padding-left: 0;
+}
+.trainingInfo button{
+    padding: 20px;
+    min-width: 200px;
+    width: 30%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+@media screen and (max-width: 1150px) {
+
+    img{
+        width: 200px;
+    }
+   
+    
+}
+
+@media screen and (max-width: 950px) {
+    .trainingInfo{
+        grid-template-columns: 1fr;
+        margin: 50px auto;
+    }
+    img{
+        width: 200px;
+    }
+   
+    .right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+   
+    
+}
+@media screen and (max-width: 460px) {
+   .img{
+       width: 100%;
+        margin: auto;
+   }
+   .img2{
+       display: none;
+   }
+   .img1{
+    width: 150px;
+    z-index: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+ .right{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+ }
+   
+    
+}

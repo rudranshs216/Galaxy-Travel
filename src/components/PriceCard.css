@@ -1,0 +1,11 @@
+h2{
+    color: white;
+}
+.priceCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white ;
+    padding: 20px 0;
+}

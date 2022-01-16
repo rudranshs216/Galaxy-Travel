@@ -1,0 +1,65 @@
+label{
+    color: white;
+    margin: auto 20px;
+
+}
+.Co{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactForm{
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+input{
+    background: rgba(255,255,255,0.3);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 20px 15px;
+}
+textarea{
+    background: rgba(255,255,255,0.3);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 20px 15px;
+    height: 100px;
+    width: 400px;
+    resize: none;
+}
+.btn{
+    margin: 10px 20px;
+    text-align: center;
+}
+input, select, textarea{
+    color: #fff;
+}
+
+@media screen and (max-width: 425px) {
+ input{
+     width: 100%;
+     margin: 5px 0 15px;
+ }
+ textarea{
+     width: 100%;
+     margin: 5px 0 15px;
+ }
+ label{
+    margin: auto 0;
+ }
+ .btn{
+     width: 100%;
+     margin: 10px 0;
+ }
+    
+}
